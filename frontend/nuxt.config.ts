@@ -20,20 +20,25 @@ export default defineNuxtConfig({
             link: [
                 {
                     rel: 'stylesheet',
-                    href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..40,200,0..1,0'
+                    href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..40,200..400,0..1,0'
                 },
                 {
                     rel: 'stylesheet',
                 },
                 {
                     rel: 'stylesheet',
-                    href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..40,200,0,0'
+                    href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..40,200..400,0,0'
                 },
             ]
         }
     },
     components: true,
     css: [
+        '~/assets/css/main.css',
+        '~/assets/css/element.css',
         'primeicons/primeicons.css',
+    ],
+    plugins: [
+        '~/plugins/animation.js',
     ],
 })
