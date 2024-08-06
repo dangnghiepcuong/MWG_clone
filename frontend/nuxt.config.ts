@@ -3,7 +3,7 @@ import Aura from '@primevue/themes/aura';
 
 export default defineNuxtConfig({
     compatibilityDate: '2024-04-03',
-    devtools: { enabled: true },
+    devtools: { enabled: false },
     srcDir: 'src/',
     modules: [
         '@primevue/nuxt-module',
@@ -17,6 +17,8 @@ export default defineNuxtConfig({
     },
     app: {
         head: {
+            charset: 'utf-8',
+            viewport: 'width=device-width, initial-scale=1',
             link: [
                 {
                     rel: 'stylesheet',
@@ -30,7 +32,7 @@ export default defineNuxtConfig({
                     href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..40,200..400,0,0'
                 },
             ]
-        }
+        },
     },
     components: true,
     css: [

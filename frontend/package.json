@@ -13,7 +13,7 @@
     "@nuxt/types": "^2.18.1",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@primevue/themes": "^4.0.2",
-    "axios": "^1.7.2",
+    "@types/lodash": "^4.17.7",
     "lodash": "^4.17.21",
     "nuxt": "^3.12.4",
     "primeicons": "^7.0.0",
