@@ -6,15 +6,8 @@ export default defineNuxtConfig({
     devtools: { enabled: false },
     srcDir: 'src/',
     modules: [
-        '@primevue/nuxt-module',
+        '@pinia/nuxt',
     ],
-    primevue: {
-        options: {
-            theme: {
-                preset: Aura
-            }
-        }
-    },
     app: {
         head: {
             charset: 'utf-8',
@@ -43,4 +36,7 @@ export default defineNuxtConfig({
     plugins: [
         '~/plugins/animation.js',
     ],
+    pinia: {
+        storesDirs: ['./src/stores/**'],
+      },
 })

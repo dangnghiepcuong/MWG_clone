@@ -10,9 +10,3 @@
     margin: 0 auto;
     object-fit: cover;
 }
-
-.container {
-    max-width: 1200px;
-    min-width: 1024px;
-    margin: auto;
-}

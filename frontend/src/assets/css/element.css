@@ -1,10 +1,17 @@
+.container {
+    position: relative;
+    max-width: 1200px;
+    min-width: 1024px;
+    margin: auto;
+}
+
 .inputtext {
     font-family: inherit;
     font-feature-settings: inherit;
     font-size: 1rem;
     color: var(--p-inputtext-color);
-    background: var(--p-inputtext-background);
-    padding: var(--p-inputtext-padding-y) var(--p-inputtext-padding-x);
+    background: #fff;
+    padding: 7px 10px;
     border: 1px solid var(--p-inputtext-border-color);
     transition: background var(--p-inputtext-transition-duration), color var(--p-inputtext-transition-duration), border-color var(--p-inputtext-transition-duration), outline-color var(--p-inputtext-transition-duration), box-shadow var(--p-inputtext-transition-duration);
     appearance: none;

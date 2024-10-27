@@ -6,9 +6,9 @@
                 <span class="title">
                     {{ get(item, 'title') }}
                     <span v-if="get(item, 'subMenu')"
-                    class="keyboard-arrow-down material-symbols-outlined">keyboard_arrow_down</span>
+                        class="keyboard-arrow-down material-symbols-outlined">keyboard_arrow_down</span>
                 </span>
-                
+
             </a>
             <div class="layout-pointer-arrow">
                 <span class="material-symbols-outlined pointer-arrow" v-if="get(item, 'subMenu')">
@@ -129,21 +129,18 @@
     font-weight: bold;
 }
 </style>
-<script>
+<script setup lang="ts">
 import _get from 'lodash/get';
-export default {
-    props: {
-        menuItems: {
-            type: Object,
-            default() {
-                return {};
-            }
-        }
-    },
-    methods: {
-        get(item, property) {
-            return _get(item, property);
-        },
-    }
+
+export interface Props {
+    menuItems: Object
+}
+
+const props = withDefaults(defineProps<Props>(), {
+    menuItems: () => { return {} },
+});
+
+const get = function (item: Object, property: string) {
+    return _get(item, property);
 }
 </script>

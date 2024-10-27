@@ -1,7 +1,7 @@
 <template>
     <div class="large-banner">
-        <img width="1920" height="920" src="//cdn.tgdd.vn/2024/06/banner/banner-big--Desk--1920x450.png"
-            alt="Banner Big Campaign">
+        <img width="1920" height="920"
+            src="https://cdnv2.tgdd.vn/mwg-static/common/Banner/8e/9d/8e9db41f5835a8b1a0d93308dc1952f1.png" alt="OPPO">
     </div>
     <div class="container">
         <BannerArea />
@@ -21,14 +21,14 @@
 <style scoped>
 @import './index.css';
 </style>
-<script>
-import BannerArea from '~/components/_Shared/BannerArea/BannerArea.vue'
-import FrameProduct from '~/components/Product/FrameProduct.vue';
+<script setup>
+definePageMeta({
+    middleware: [
+        // 'setup',
+    ],
+    layout: 'home-page',
+})
 
-export default {
-    components: {
-        BannerArea,
-        FrameProduct,
-    },
-}
+import BannerArea from '~/components/_Shared/BannerArea/index.vue'
+import FrameProduct from '~/components/Product/FrameProduct.vue'
 </script>
